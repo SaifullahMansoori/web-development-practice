@@ -1,2 +1,1 @@
-# web-development-practice
-web development  practice
+Welcome to my web development practice repository! This repository is a space for me to store and share the code I write while practicing web development. Feel free to explore the different projects and directories. Each project represents a different aspect or technology in web development that I am learning and experimenting with it.
