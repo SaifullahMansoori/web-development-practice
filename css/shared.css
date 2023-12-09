@@ -1,0 +1,66 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+header > nav > ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+header > nav > ul > li {
+  margin-left: 20px;
+}
+#page-logo a {
+  text-decoration: none;
+  padding: 10px;
+  color: rgb(245, 243, 160);
+  font-size: 50px;
+  text-transform: capitalize;
+  text-shadow: 1px 1px 3px rgb(0, 0, 0);
+}
+header > nav > ul > li > a {
+  text-decoration: none;
+  color: rgb(255, 251, 0);
+  font-size: 24px;
+  padding: 12px;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+header > nav > ul > li > a:hover {
+  color: rgb(77, 77, 77);
+  background-color: rgb(255, 251, 0);
+}
+footer {
+  background: linear-gradient(70deg, rgb(75, 67, 67), rgb(32, 51, 51));
+  padding: 40px 0;
+  border-radius: 8px;
+}
+footer > ul {
+  display: flex;
+  justify-content: center;
+}
+footer > ul > li {
+  width: 80px;
+  height: 80px;
+  margin: 0 50px;
+}
+footer img {
+  width: 100%;
+  height: 100%;
+}
