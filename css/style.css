@@ -1,93 +1,76 @@
 body {
-  font-family: "Times New Roman", Times, serif;
-  margin: 0;
-  background-color: rgb(44, 41, 38);
+  font-family: sans-serif;
+  background-color: rgb(244, 255, 255);
 }
-a {
-  text-decoration: none;
-}
-ul {
-  list-style: none;
-}
-#main-header {
-  height: 5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgb(29, 26, 24);
-  padding: 0 5%;
-}
-#logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: rgb(238, 164, 80);
-  text-transform: capitalize;
-}
-#main-header nav > ul {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-}
-#main-header nav > ul > li {
-  margin: 0 1rem;
-}
-#main-header nav a {
-  color: rgb(185, 131, 31);
-  font-size: 1.5rem;
-  text-transform: capitalize;
-}
-#main-header nav a:hover {
-  color: rgb(228, 163, 44);
-  background-color: rgb(105, 83, 57);
-  border-radius: 8px;
-  padding: 8px;
-}
-
-main > h1 {
+header h1 {
   text-align: center;
-  color: rgb(238, 164, 80);
-  font-size: 3rem;
+  margin: 2rem;
 }
-#latest-products {
-  width: 80%;
-  margin: 2rem auto;
-}
-#latest-products ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  margin: 0;
-  padding: 0;
-}
-.Food-item {
-  background-color: rgb(228, 206, 182);
-  border-radius: 6px;
-  overflow: hidden;
-}
-.Food-item img {
-  height: 15rem;
-  width: 100%;
-  object-fit: cover;
-}
-.food-item-content {
-  text-align: center;
+form {
+  width: 40rem;
+  margin: auto;
+  background-color: rgb(230, 248, 248);
   padding: 1rem;
-}
-.btn {
-  background-color: rgb(228, 157, 44);
-  color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   border-radius: 6px;
+}
+form section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+section {
+  margin-bottom: 1rem;
+}
+label {
+  color: rgb(34, 43, 61);
+  display: block;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+input,
+textarea,
+select {
+  font-family: inherit;
+  padding: 0.5rem;
+  border: 1px solid rgb(152, 159, 184);
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  background-color: rgb(230, 248, 248);
+}
+textarea {
+  resize: none;
+}
+#form-action {
+  text-align: right;
+}
+button {
+  font-family: inherit;
+  border: 1px solid rgb(97, 249, 67);
+  background-color: rgb(21, 117, 1);
+  color: white;
+  border-radius: 4px;
   padding: 0.5rem 1.5rem;
+  cursor: pointer;
 }
-.btn:hover {
-  background-color: rgb(221, 134, 34);
+button:hover {
+  border: 1px solid rgb(159, 251, 141);
+  background-color: rgb(39, 211, 5);
+  padding: 0.6rem 1.5rem;
 }
-@media (max-width: 48rem) {
-  main > h1 {
-    font-size: 1.5rem;
-  }
-  #latest-products ul {
-    grid-template-columns: 100%;
-  }
+.inline-control {
+  display: flex;
+}
+.inline-control label {
+  margin: 0;
+  padding: 0.3rem;
+}
+.inline-control input {
+  width: auto;
 }
